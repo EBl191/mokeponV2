@@ -317,15 +317,12 @@ function secuenciaAtaque() {
 }
 
 function seleccionarMascotaEnemigo(enemigo) {
-
-    // imagenMsascotaEnemigo.innerHTML= 
-    // enemigo.nombre
+    
+    ataquesMokeponEnemigo = enemigo.ataques
     imagenMsascotaEnemigo.innerHTML=`
         <img class="img_mokepon" src=${enemigo.foto} alt=${enemigo.nombre} />
         <p>${enemigo.nombre}</p>
-        ${ataquesMokeponEnemigo = enemigo.ataques}
-    `
-    // ataquesMokeponEnemigo = enemigo.ataques
+        `
     secuenciaAtaque()
 }
 
